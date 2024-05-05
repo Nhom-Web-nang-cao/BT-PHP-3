@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+</head>
+<body>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+        }
+        form{
+            text-align: center;
+        }
+        h1 {
+            text-align: center;
+            margin-bottom: 20px;
+            margin-top: 20vh;
+        }
+        input[type="text"], input[type="password"] {
+            
+            width: 200px;
+            padding: 10px;
+            margin-bottom: 10px;
+            border: 1px solid #ccc;
+        }
+        button {
+            background-color: #4CAF50;
+            color: white;
+            padding: 10px 30px;
+            border: none;
+            cursor: pointer;
+        }
+        .message {
+            text-align: center;
+            font-weight: bold;
+            color: red;
+            margin-top: 10px;
+        }
+    </style>
+    <h1>Login</h1>
+    <form action="validateuser.php" method="post">
+        <label for="username">Username: </label>
+        <input type="text" id="username" name="username">
+        <br>
+        <label for="password">Password: </label>
+        <input type="password" id="password" name="password">
+        <br>
+        <button type="submit">Login</button>
+        <p>Bạn chưa có tài khoản? <a href="signup.html">Sign up</a></p>
+        
+    </form>
+</body>
+</html>
